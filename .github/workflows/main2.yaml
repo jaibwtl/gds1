@@ -1,0 +1,27 @@
+name: CI2
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+jobs:
+  build:
+    runs-on: self-hosted
+    steps:
+      - uses: actions/checkout@v3
+      - name: Run a one-line script
+        run: echo Hello, world!
+      - name: Run a multi-line script
+        run: |
+          echo Add other actions to build,
+          echo ${{ secrets.var1 }}
+          echo ${{ vars.var1 }}
+      - name: Create a file
+        run: touch /tmp/gagdeep2
+  test:
+    runs-on: self-hosted
+    steps:
+      - name: Run test cases
+        run: echo "Test running"
+      - name: List files
+        run: ls -l /tmp/
