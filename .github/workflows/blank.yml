@@ -17,7 +17,7 @@ jobs:
           echo ${{ secrets.var1 }}
           echo ${{ vars.var1 }}
       - name: Create a file
-        run: touch /tmp/gagandeep1
+        run: touch /tmp/gagdeep1
   test:
     runs-on: self-hosted
     steps:
