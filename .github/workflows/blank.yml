@@ -18,7 +18,7 @@ jobs:
           echo Add other actions to build,
           echo test, and deploy your project
       - name: Create a file
-        run: touch /gagandeep1
+        run: touch /tmp/gagandeep1
   test:
     runs-on: self-hosted
     steps:
