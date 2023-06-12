@@ -19,7 +19,6 @@ jobs:
           echo test, and deploy your project
       - name: Create a file
         run: touch /gagandeep1
-		
   test:
     runs-on: self-hosted
     steps:
